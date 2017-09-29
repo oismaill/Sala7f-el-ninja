@@ -13,3 +13,28 @@ private String hwebsite;
 int hroomsnumber;
 private int htelephone;
 }
+class guestinformation 
+{
+    String firstname;
+    String lastname;
+    int id;
+    int age;
+    String adress;
+    long phonenumber;
+    String email;
+    double deposit;
+}    
+class reservation 
+{
+    int reservationnumber;
+    int roomnumber;
+    int agentname;
+    int checkindate;
+    int checkoutdate;
+    double roomprice;
+    double totalcost;
+    String spa;
+    String trasportaion;
+    String gym;
+    String safari;   
+}
