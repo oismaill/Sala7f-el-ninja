@@ -61,8 +61,6 @@ class Employee
 
 class Payment
 {
-    boolean CreditCard;
-    boolean Cash;
-    boolean BankTransform;
+    enum Payment { Cash, CreditCard, BankTransfer };
     int TotalCost;
 }
