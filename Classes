@@ -40,7 +40,6 @@ class reservation
     int checkindate;
     int checkoutdate;
     double roomprice;
-    double totalcost;
     String spa;
     String trasportaion;
     String gym;
@@ -51,9 +50,11 @@ class reservation
 class Employee
 {
     int ID;
-    String Name;
+    String FirstName;
+    String LastName;
     String Address;        
     String PhoneNumber;
+    String Email;
     int Salary;
 }
 
@@ -63,5 +64,5 @@ class Payment
     boolean CreditCard;
     boolean Cash;
     boolean BankTransform;
-    int TotalAmountOfMoney;
+    int TotalCost;
 }
