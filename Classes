@@ -57,6 +57,7 @@ class Employee
     int Salary;
 }
 
+
 class Payment
 {
     boolean CreditCard;
