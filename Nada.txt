@@ -1,0 +1,11 @@
+class Employee
+    {
+        int ID;
+        String Name;
+        String Address;
+        String PhoneNumber;
+        int Salary;
+        
+        
+    }
+    
