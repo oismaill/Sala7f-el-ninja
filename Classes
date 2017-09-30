@@ -36,7 +36,7 @@ class reservation
 {
     int reservationnumber;
     int roomnumber;
-    int agentname;
+    String agentname;
     int checkindate;
     int checkoutdate;
     double roomprice;
@@ -55,7 +55,7 @@ class Employee
     String Address;        
     String PhoneNumber;
     String Email;
-    int Salary;
+    double Salary;
 }
 
 
