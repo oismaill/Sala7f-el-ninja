@@ -61,6 +61,8 @@ class Employee
 
 class Payment
 {
-    enum Payment { Cash, CreditCard, BankTransfer };
+    int Cash;
+    int CreditCard;
+    int BankTransfer;
     int TotalCost;
 }
