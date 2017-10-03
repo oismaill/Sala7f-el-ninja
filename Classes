@@ -149,6 +149,7 @@ class guestinformation
 class reservation 
 {
    private int reservationnumber;
+   private int numberofnights;
    private int roomnumber;
    private String agentname;
    private String checkindate;
@@ -156,6 +157,7 @@ class reservation
    private double roomprice;
    private double totalcost;
    public void setreservationnumber (int reservationnumber){};
+   public void setnumberofnights (int numberofnights){};
    public void setroomnumber (int roomnumber){};
    public void setagentname (String agentname){};
    public void setcheckindate (String checkindate){};
@@ -165,6 +167,10 @@ class reservation
    public int getreservationnumber () 
    {
        return this.reservationnumber;
+   }
+   public int getnumberofnights () 
+   {
+       return this.numberofnights;
    }
    public int getroomnumber () 
    {
