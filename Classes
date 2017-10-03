@@ -1,68 +1,93 @@
-class room
+public class room{
+private int num;
+private int bednum;
+private String type;
+private String view;
+private int price;
+public void setrnum(int num)
 {
-   int rnum;
-   int bednum;
-   String rclass;
-   String rview;
-   int rprice;
+this.num=num;
 }
-
-
-class hotel
+public void setbednum(int num)
 {
-   String hname;
-   int hrate;
-   String hdestination;
-   String hwebsite;
-   int hroomsnumber;
-   int htelephone;
+this.bednum=num;
 }
-
-
-class guestinformation 
+public void setrtype(String type)
 {
-    String firstname;
-    String lastname;
-    int id;
-    int age;
-    String adress;
-    long phonenumber;
-    String email;
-    double deposit;
-}    
-
-
-class reservation 
-{
-    int reservationnumber;
-    int roomnumber;
-    String agentname;
-    int checkindate;
-    int checkoutdate;
-    double roomprice;
-    String spa;
-    String trasportaion;
-    String gym;
-    String safari;   
+this.type = type;
 }
-
-
-class Employee
+public void setview(String view)
 {
-    int ID;
-    String FirstName;
-    String LastName;
-    String Address;        
-    String PhoneNumber;
-    String Email;
-    double Salary;
+this.view=view;
 }
-
-
-class Payment
+public void setprice(int price)
 {
-    int Cash;
-    int CreditCard;
-    int BankTransfer;
-    int TotalCost;
+this.price=price;
 }
+public int getrnum()
+{
+return num;
+}
+public int getbednum()
+{
+return bednum;
+}
+public String getrtype()
+{
+return type;
+}
+public String getview()
+{
+    return view;
+}
+public int getprice()
+{
+return price;
+}
+}
+~_______________________________________________________________________________________________________________________________~
+ public class hotel{
+private String name= " ";
+private int rate;
+private String destination = " ";
+private String website = " ";
+private int roomsnum;
+private int phone;
+public void setrate(int rate)
+{
+ this.rate=rate;
+}
+public void setroomnum(int roomnum)
+{
+this.roomsnum = roomnum;
+}
+public void setphone(int phone)
+{
+this.phone = phone;
+}
+public String getname()
+{
+return this.name;
+}
+public int getrate()
+{
+return this.rate;
+}
+public String getdest()
+{
+return this.destination;
+}
+public String getweb()
+{
+return this.website;
+}
+public int getroomsnum()
+{
+return this.roomsnum;
+}
+public int getphone()
+{
+return this.phone;
+}
+}
+~_______________________________________________________________________________________________________________________________~
