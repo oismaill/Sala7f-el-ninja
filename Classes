@@ -4,46 +4,16 @@ private int bednum;
 private String type;
 private String view;
 private int price;
-public void setrnum(int num)
-{
-this.num=num;
-}
-public void setbednum(int num)
-{
-this.bednum=num;
-}
-public void setrtype(String type)
-{
-this.type = type;
-}
-public void setview(String view)
-{
-this.view=view;
-}
-public void setprice(int price)
-{
-this.price=price;
-}
-public int getrnum()
-{
-return num;
-}
-public int getbednum()
-{
-return bednum;
-}
-public String getrtype()
-{
-return type;
-}
-public String getview()
-{
-    return view;
-}
-public int getprice()
-{
-return price;
-}
+public void setrnum(int num){}
+public void setbednum(int num){}
+public void setrtype(String type){}
+public void setview(String view){}
+public void setprice(int price){}
+public int getrnum(){}
+public int getbednum(){}
+public String getrtype(){}
+public String getview(){}
+public int getprice(){}
 }
 ~_______________________________________________________________________________________________________________________________~
  public class hotel{
@@ -53,42 +23,15 @@ private String destination = " ";
 private String website = " ";
 private int roomsnum;
 private int phone;
-public void setrate(int rate)
-{
- this.rate=rate;
-}
-public void setroomnum(int roomnum)
-{
-this.roomsnum = roomnum;
-}
-public void setphone(int phone)
-{
-this.phone = phone;
-}
-public String getname()
-{
-return this.name;
-}
-public int getrate()
-{
-return this.rate;
-}
-public String getdest()
-{
-return this.destination;
-}
-public String getweb()
-{
-return this.website;
-}
-public int getroomsnum()
-{
-return this.roomsnum;
-}
-public int getphone()
-{
-return this.phone;
-}
+public void setrate(int rate){}
+public void setroomnum(int roomnum){}
+public void setphone(int phone){}
+public String getname(){}
+public int getrate(){}
+public String getdest(){}
+public String getweb(){}
+public int getroomsnum(){}
+public int getphone(){}
 }
 ~_______________________________________________________________________________________________________________________________~
 class guestinformation 
