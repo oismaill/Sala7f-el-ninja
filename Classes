@@ -91,3 +91,105 @@ return this.phone;
 }
 }
 ~_______________________________________________________________________________________________________________________________~
+class guestinformation 
+{
+  private String firstname;
+  private String lastname;
+  private int id;
+  private int age;
+  private String adress;
+  private String phonenumber;
+  private String email;
+  private double deposit;
+  private String kind;
+  public void setname(String firstname,String lastname){};
+  public void setid(int id){};
+  public void setage (int age) {};
+  public void setadress (String adress) {};
+  public void setphonenumber (String phonenumber) {};
+  public void setemail (String email) {};
+  public void deposit (double deposit) {};
+  public void setkind (String kind) {};
+  public String getfirstname()  
+  {
+      return this.firstname;
+  }
+  public int getid ()
+  {
+      return this.id;
+  }
+  public int getage ()
+  {
+      return this.age;
+  }
+  public String getadress ()
+  {
+      return this.adress;
+  }
+  public String getphonenumber ()
+  {
+      return this.phonenumber;
+  }
+  public String getemail ()
+  {
+      return this.email ;
+  }
+  public double getdeposit ()
+  {
+      return this.deposit ;
+  }
+  public String getkind ()
+  {
+      return this.kind;
+  }
+  
+}
+~_______________________________________________________________________________________________________________________________~
+
+class reservation 
+{
+   private int reservationnumber;
+   private int roomnumber;
+   private String agentname;
+   private String checkindate;
+   private String checkoutdate;
+   private double roomprice;
+   private double totalcost;
+   public void setreservationnumber (int reservationnumber){};
+   public void setroomnumber (int roomnumber){};
+   public void setagentname (String agentname){};
+   public void setcheckindate (String checkindate){};
+   public void setcheckoutdate (String checkoutdate){};
+   public void setroomprice (double roomprice){};
+   public void settotalcost (double totalcost){};
+   public int getreservationnumber () 
+   {
+       return this.reservationnumber;
+   }
+   public int getroomnumber () 
+   {
+       return this.roomnumber;
+   }
+   public String getagentname () 
+   {
+       return this.agentname;
+   }
+   public String getcheckindate () 
+   {
+       return this.checkindate;
+   }
+   public String getcheckoutdate () 
+   {
+       return this.checkoutdate;
+   }
+   public double getroomprice ()
+   {
+       return this.roomprice;
+   }
+   public double gettotalcost () 
+   {
+       return this.totalcost;
+   }
+   
+   }
+  
