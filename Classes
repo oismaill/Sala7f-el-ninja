@@ -245,3 +245,32 @@ class contact{
     private int phonenumber;
 }
 ~_________________________________________________________________________________________________________________________________~
+public class Manger 
+{ 
+  +Data From Employee Class "inherit"
+  public void RecordComplaints(){}
+  public void MangeStaff(){}
+}
+
+    ~_______________________________________________________________________________________________________________________________~
+
+public class FoodItem 
+{
+  private int ID;
+  private String FoodName;
+  public void AddFood() {}
+  public void Edit() {}
+  public void Delete() {}
+  public void Search () {}
+  
+ }
+    ~_______________________________________________________________________________________________________________________________~
+
+public class HotelIncome
+{
+  private int Income;
+  private int Outcome;
+  public void CalculateIncome() {}
+  public void CalculateOutcome () {}
+  public void PrintBill () {}
+}
