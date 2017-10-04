@@ -86,6 +86,10 @@ class guestinformation
       return this.kind;
   }
   
+    public void TotalGuests(int Sum){}
+    public void CheckFreeSpace(int NewGuests){}
+    public void AddNumberOfAdult(int Adult){}
+    public void AddNumberOfChildren(int Children){}
 }
 ~_______________________________________________________________________________________________________________________________~
 
@@ -140,6 +144,9 @@ class reservation
        return this.totalcost;
    }
    
+ public boolean roomtype (int singleroom , int doubleroom,int x ){}
+ public boolean capcity (int numberofrooms){}
+ public String roomnumber (int number){}
    }
   ~_______________________________________________________________________________________________________________________________~
 
@@ -214,21 +221,142 @@ public class Employee
 }
   ~_______________________________________________________________________________________________________________________________~
 
-public class GuestInformation {
-    private int ID;
-    private String FirstName;
-    private String LastName;
-    private int age;
-    private String Address;
-    private String PhoneNumber;
-    private String Email;
-    private int Deposit;
-    public void TotalGuests(int Sum){}
-    public void CheckFreeSpace(int NewGuests){}
-    public void AddNumberOfAdult(int Adult){}
-    public void AddNumberOfChildren(int Children){}
-       
+class checkinandout
+{
+   private int dayofccheckin;
+   private String monthofcheckin;
+   private String yearofcheckin;
+   private int dayofccheckout;
+   private String monthofcheckout;
+   private String yearofcheckout;
+     public void setdayofcheckin (int dayofcheckin){};
+     public void setmonthofcheckin (String monthofcheckin){};
+     public void setyearofcheckin (String monthofcheckin){};
+     public void setdayofcheckout (int dayofcheckout){};
+     public void setmonthofcheckout (String monthofcheckout){};
+     public void setyearofcheckout (String monthofcheckout){};
+     public int getdayofcheckin ()
+   {
+       return this.dayofccheckin;
+   }
+      public String getmonthofcheckin ()
+   {
+       return this.monthofcheckin;
+   }
+       public String getyearofcheckin ()
+   {
+       return this.yearofcheckin;
+   }
+       public int getdayofcheckout ()
+   {
+       return this.dayofccheckout;
+   }
+      public String getmonthofcheckout ()
+   {
+       return this.monthofcheckout;
+   }
+       public String getyearofcheckout ()
+   {
+       return this.yearofcheckout;
+   }
+   public int calculatenoofdays (int dayofcheckin,int dayofcheckout) {}
 }
 
   ~_______________________________________________________________________________________________________________________________~
 
+class spa
+{
+  private int spaprice;
+  private int spacapcity;
+  private int spataxs;
+     public void setspaprice (int spaprice) {} ;
+     public void setspacapcity (int spacapcity) {} ;
+     public void setspataxs (int spataxs) {} ;
+     public int getspaprice ()
+   {
+       return this.spaprice;
+   }
+        public int getspacapcity ()
+   {
+       return this.spacapcity;
+   }
+         public int getspataxs ()
+   {
+       return this.spataxs;
+   }
+   public  boolean spacapcity (int spacapcity) {}
+   public int totalcostofspa (int spaprice,int spataxs) {}
+   public void timeofspa (int hrs,int mins) {}
+}
+  ~_______________________________________________________________________________________________________________________________~
+class gym
+{
+  private int gymprice;
+  private int gymcapcity;
+  private int gymtaxs;
+     public void setgymprice (int gymprice) {} ;
+     public void setspacapcity (int gymcapcity) {} ;
+     public void setsgymtaxs (int gymtaxs) {} ;
+     public int getgymprice ()
+   {
+       return this.gymprice;
+   }
+        public int getgymcapcity ()
+   {
+       return this.gymcapcity;
+   }
+         public int getgymtaxs ()
+   {
+       return this.gymtaxs;
+   }
+   public boolean wantgym (int choice) {}
+   public boolean gymcapcity (int gymcapcity) {}
+   public int totalcostofgym (int gymprice,int taxs) {}
+   public void timeofgym (int hrs,int mins)
+    }
+    ~_______________________________________________________________________________________________________________________________~
+
+class transportation 
+{
+  private int transportationprice;
+  private int transporationtaxs;
+  private String carmodel;
+   public void settransportationprice (int transportationprice) {} ;
+     public void settransporationtaxs (int transporationtaxs) {} ;
+     public void setcarmodel (String spataxs) {} ;
+     public int gettransportationprice ()
+   {
+       return this.transportationprice;
+   }
+        public int gettransporationtaxs ()
+   {
+       return this.transporationtaxs;
+   }
+         public String getcarmodel ()
+   {
+       return this.carmodel;
+   }
+   public boolean wanttransporation (int choice) {}
+   public int totalcostoftransportation (int transportationprice,int taxs){}
+   public String addtypeofcar (String carmodel)
+}
+  ~_______________________________________________________________________________________________________________________________~
+
+class safari 
+{
+    private int safariprice;
+    private int safaritaxs;
+    public void setsafariprice (int safariprice) {} ;
+    public void setsafaritaxs (int safaritaxs) {} ;
+
+    public int safariprice ()
+   {
+       return this.safariprice;
+   }public int getsafaritaxs ()
+   {
+       return this.safaritaxs;
+   }
+     public boolean wantsafari (int choice) {}
+     public int totalcostofsafari (int safariprice,int taxs){}
+
+}
