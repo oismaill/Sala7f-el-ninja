@@ -1,17 +1,18 @@
-public class room {
+public class room{
 private int num;
 private int bednum;
 private String type;
 private String view;
+private int price;
 public void BookRoom(){}
 public void AddRoom(){}
 public void DeleteRoom(){}
 public void SearchRoom(){}
 public void EditRoom(){}
-public void Setup room fees() {}
+
 }
 ~_______________________________________________________________________________________________________________________________~
- public class hotel {
+ public class hotel{
 private String name= " ";
 private int rate;
 private String destination = " ";
@@ -23,7 +24,8 @@ public void CheckFreeSpace(int NewGuests){}
 public void AddNewGuest(){}
 }
 ~_______________________________________________________________________________________________________________________________~
-class guest {
+class guestinformation 
+{
   private String firstname;
   private String lastname;
   private int id;
@@ -33,15 +35,16 @@ class guest {
   private String phonenumber;
   private String email;
   private double deposit;
+  private String kind;
   public void deposit (double deposit) {};
-  public void CheckInAndOut() {}
-  public void PayBill () {}
-  public void Order() {}
-  public void SubmitFeedback () {}
+  public void AddNumberOfAdult(int Adult){}
+  public void AddNumberOfChildren(int Children){}
+  
  }
 ~_______________________________________________________________________________________________________________________________~
 
-class reservation {
+class reservation 
+{
    private int reservationnumber;
    private int numberofnights;
    private int roomnumber;
@@ -50,13 +53,16 @@ class reservation {
    private String checkoutdate;
    private double roomprice;
    private double totalcost;
-   public boolean roomtype (int singleroom , int doubleroom,int x ){}
-   public boolean capcity (int numberofrooms){}
-   public String roomnumber (int number){}
+  
+   
+ public boolean roomtype (int singleroom , int doubleroom,int x ){}
+ public boolean capcity (int numberofrooms){}
+ public String roomnumber (int number){}
    }
   ~_______________________________________________________________________________________________________________________________~
 
-public class BankTransfer {
+public class BankTransfer 
+{
     private String Email;
     private String Password;
     private int Amount;
@@ -70,7 +76,8 @@ public class BankTransfer {
 }
   ~_______________________________________________________________________________________________________________________________~
 
-public class Cash {
+public class Cash 
+{
     private int AmountOfMoney;
     private int MoneyPaid;
     private int taxes;
@@ -82,7 +89,8 @@ public class Cash {
 }
   ~_______________________________________________________________________________________________________________________________~
 
-public class CreditCard {    
+public class CreditCard 
+{    
     private String CardName;
     private String ShippingAddress;
     private String ExpDate;
@@ -97,7 +105,8 @@ public class CreditCard {
   ~_______________________________________________________________________________________________________________________________~
 
 
-public class Employee {
+public class Employee 
+{
     private int ID;
     private String FirstName;
     private String LastName;
@@ -110,10 +119,13 @@ public class Employee {
     public void AddBounce(){}
     public void AddTaxes(){}
     public void PrintReceipt(){} 
+   public addEmployee();
+   public creat_ID();
 }
   ~_______________________________________________________________________________________________________________________________~
 
-public class checkinandout {
+public class checkinandout
+{
    private int dayofccheckin;
    private String monthofcheckin;
    private String yearofcheckin;
@@ -121,10 +133,12 @@ public class checkinandout {
    private String monthofcheckout;
    private String yearofcheckout;
    public int calculatenoofdays (int dayofcheckin,int dayofcheckout) {}
+   
 }
   ~_______________________________________________________________________________________________________________________________~
 
-public class spa {
+public class spa
+{
   private int spaprice;
   private int spacapcity;
   private int spataxs;
@@ -134,7 +148,8 @@ public class spa {
 }
   ~_______________________________________________________________________________________________________________________________~
 
-public class gym {
+public class gym
+{
   private int gymprice;
   private int gymcapcity;
   private int gymtaxs;
@@ -142,10 +157,11 @@ public class gym {
   public boolean gymcapcity (int gymcapcity) {}
   public int totalcostofgym (int gymprice,int taxs) {}
   public void timeofgym (int hrs,int mins)
-}
+    }
     ~_______________________________________________________________________________________________________________________________~
 
-public class transportation {
+public class transportation 
+{
   private int transportationprice;
   private int transporationtaxs;
   private String carmodel;
@@ -155,79 +171,77 @@ public class transportation {
 }
   ~_______________________________________________________________________________________________________________________________~
 
-public class safari {
+public class safari 
+{
     private int safariprice;
     private int safaritaxs;
     public int safariprice (){}  
     public int Addtaxs (){}
     public boolean Addsafari (int choice) {}
-    public int totalcost(int safariprice,int taxs){}   
+    public int totalcost(int safariprice,int taxs){}
+    
 }
 
   ~_______________________________________________________________________________________________________________________________~
 
-public class Bill {
+public class Bill
+{
   private int ID;
   private String GuestName;
   public void PrintBill(){} 
+  
 }
   ~_______________________________________________________________________________________________________________________________~
 
-public class Receptionist {
-  +Data From Employee Class "inherit"
-  public void CheckRoomAviliblty(){}
-  public void AddNumberOfAdult(int Adult){}
-  public void AddNumberOfChildren(int Children){}
-  public void BookRoom(){}
-  public void GenerateBill(){}
-  public void AcceptCustmorFeedback(){}
-  }
-    ~_______________________________________________________________________________________________________________________________~
-
-public class Manger { 
-  +Data From Employee Class "inherit"
-  public void RecordComplaints(){}
-  public void MangeStaff(){}
-  public void Hire Employee() {}
-}
-    ~_______________________________________________________________________________________________________________________________~
-
-public class FoodItem {
-  private int ID;
-  private String FoodName;
-  public void AddFood() {}
-  public void Edit() {}
-  public void Delete() {}
-  public void Search () {}
- }
-    ~_______________________________________________________________________________________________________________________________~
-
-public class HotelIncome {
-  private int Income;
-  private int Outcome;
-  public void CalculateIncome() {}
-  public void CalculateOutcome () {}
-  public void PrintBill () {}
-}
-    ~_______________________________________________________________________________________________________________________________~
-
-public class Bed {
-  private int Lenght;
-  private int Width;
-  public void NumberOfBeds (){}
-  public void AddBed () {}
-  public void DeleteBed () {} 
- }
-      ~_______________________________________________________________________________________________________________________________~
-
-public class Accounting user {
-    +Data From Employee Class "inherit"
-    private int Accounting reports;
-    public void AddBalanceSheet() {}
-    public void CalculateHotelBalance () {}
-    public void PrintBalanceSheet () {}  
- }
-
-
-
+public class Receptionist
   
+  private int ID;
+  private String Name;
+  public 
+~_________________________________________________________________________________________________________________________________~
+ class cheif
+ {
+   private void addcheif();
+   private void deletecheif();
+   private void modify();
+   private void takeorder();
+ }
+ ~_________________________________________________________________________________________________________________________________~
+ class security 
+ {
+   private void addsecurity();
+   private void deletesecurity();
+   private void modify();
+   private givealalrm();
+ }
+ ~_________________________________________________________________________________________________________________________________~
+ class hous_keeping 
+ {
+    private void addhous_keeping();
+    private void deletehous_keeping();
+    private void modify()
+    private void roomsDone();
+ }
+ ~_________________________________________________________________________________________________________________________________~
+ class worker
+ {
+    private void addclean_worker();
+    private void deleteclean_worker();
+    private void modify()
+    private void cleanDone();
+ }
+ ~_________________________________________________________________________________________________________________________________~
+ class watier
+ {
+    private void addclean_worker();
+    private void deleteclean_worker();
+    private void modify()
+    private void cleanDone();   
+ }
+~_________________________________________________________________________________________________________________________________~
+class contact{
+    private String name;
+    private String email;
+    private int phonenumber;
+}
+~_________________________________________________________________________________________________________________________________~
