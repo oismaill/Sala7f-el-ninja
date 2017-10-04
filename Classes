@@ -220,6 +220,16 @@ public class FoodItem
   public void Search () {}
   
  }
+    ~_______________________________________________________________________________________________________________________________~
+
+public class HotelIncome
+{
+  private int Income;
+  private int Outcome;
+  public void CalculateIncome() {}
+  public void CalculateOutcome () {}
+  public void PrintBill () {}
+}
 
 
 
