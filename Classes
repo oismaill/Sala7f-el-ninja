@@ -141,4 +141,94 @@ class reservation
    }
    
    }
-  
+  ~_______________________________________________________________________________________________________________________________~
+
+public class BankTransfer 
+{
+    private String Email;
+    private String Password;
+    private int Amount;
+    private String BankName;
+    private String SendToHotel;
+    public void CheckEnoughMoneyInAccount(){}
+    public void TotalSumOfMoney(){}
+    public void TakeMoneyFromAccount(){}
+    public void MoneyPaid(){}   
+    public void PrintReceipt(){}
+}
+  ~_______________________________________________________________________________________________________________________________~
+
+public class Cash 
+{
+    private int AmountOfMoney;
+    private int MoneyPaid;
+    private int taxes;
+    private void AddTaxes(){}
+    private void CalculateAmountOfMoney(){}
+    public void MoneyPaid(){}
+    public void CalculateChange(){}
+    public void PrintReceipt(){} 
+}
+  ~_______________________________________________________________________________________________________________________________~
+
+public class CreditCard 
+{    
+    private String CardName;
+    private String ShippingAddress;
+    private String ExpDate;
+    private String CardNumber;
+    private String SecurityCode;
+    public void setCardName(String CardName){}
+    public void setShippingAddress(String ShippingAddress){}
+    public void setExpDate(String ExpDate){}
+    public void setCardNumber(String CardNumber){}
+    public void setSecurityCode(String SecurityCode){}      
+    public String getCardName(){return this.CardName;}
+    public String getShippingAddress(){return this.ShippingAddress;}
+    public String getExpDate(){return this.ExpDate;}        
+    public String getCardNumber(){return this.CardNumber;}
+    public String getSecurityCode(){return this.SecurityCode;}  
+    public void CheckEnoughMoneyInCard (){}
+    public void TotalSumOfMoney(){}
+    public void TakeMoneyFromCard (){}
+    public void MoneyPaid(){}
+    public void PrintReceipt(){}
+}
+  ~_______________________________________________________________________________________________________________________________~
+
+
+public class Employee 
+{
+    private int ID;
+    private String FirstName;
+    private String LastName;
+    private String Address;
+    private String PhoneNumber;
+    private String Email;
+    private int Salary;
+    public void CalculateNumberOfHours(int hours){}
+    public int CalculateSalary(int x,int y){return x+y;}
+    public void AddBounce(){}
+    public void AddTaxes(){}
+    public void PrintReceipt(){} 
+}
+  ~_______________________________________________________________________________________________________________________________~
+
+public class GuestInformation {
+    private int ID;
+    private String FirstName;
+    private String LastName;
+    private int age;
+    private String Address;
+    private String PhoneNumber;
+    private String Email;
+    private int Deposit;
+    public void TotalGuests(int Sum){}
+    public void CheckFreeSpace(int NewGuests){}
+    public void AddNumberOfAdult(int Adult){}
+    public void AddNumberOfChildren(int Children){}
+       
+}
+
+  ~_______________________________________________________________________________________________________________________________~
+
