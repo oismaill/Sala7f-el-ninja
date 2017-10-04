@@ -24,7 +24,7 @@ public void CheckFreeSpace(int NewGuests){}
 public void AddNewGuest(){}
 }
 ~_______________________________________________________________________________________________________________________________~
-class guestinformation 
+class guest
 {
   private String firstname;
   private String lastname;
@@ -35,11 +35,11 @@ class guestinformation
   private String phonenumber;
   private String email;
   private double deposit;
-  private String kind;
   public void deposit (double deposit) {};
-  public void AddNumberOfAdult(int Adult){}
-  public void AddNumberOfChildren(int Children){}
-  
+  public void CheckInAndOut() {}
+  public void PayBill () {}
+  public void Order() {}
+  public void SubmitFeedback () {}
  }
 ~_______________________________________________________________________________________________________________________________~
 
@@ -53,11 +53,9 @@ class reservation
    private String checkoutdate;
    private double roomprice;
    private double totalcost;
-  
-   
- public boolean roomtype (int singleroom , int doubleroom,int x ){}
- public boolean capcity (int numberofrooms){}
- public String roomnumber (int number){}
+   public boolean roomtype (int singleroom , int doubleroom,int x ){}
+   public boolean capcity (int numberofrooms){}
+   public String roomnumber (int number){}
    }
   ~_______________________________________________________________________________________________________________________________~
 
@@ -192,7 +190,38 @@ public class Bill
   ~_______________________________________________________________________________________________________________________________~
 
 public class Receptionist
-  
+{
+  +Data From Employee Class "inherit"
+  public void CheckRoomAviliblty(){}
+  public void AddNumberOfAdult(int Adult){}
+  public void AddNumberOfChildren(int Children){}
+  public void BookRoom(){}
+  public void GenerateBill(){}
+  public void AcceptCustmorFeedback(){}
+  }
+    ~_______________________________________________________________________________________________________________________________~
+
+public class Manger 
+{ 
+  +Data From Employee Class "inherit"
+  public void RecordComplaints(){}
+  public void MangeStaff(){}
+}
+
+    ~_______________________________________________________________________________________________________________________________~
+
+public class FoodItem 
+{
   private int ID;
-  private String Name;
-  public 
+  private String FoodName;
+  public void AddFood() {}
+  public void Edit() {}
+  public void Delete() {}
+  public void Search () {}
+  
+ }
+
+
+
+
+  
