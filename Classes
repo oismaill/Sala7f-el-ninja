@@ -4,16 +4,12 @@ private int bednum;
 private String type;
 private String view;
 private int price;
-public void setrnum(int num){}
-public void setbednum(int num){}
-public void setrtype(String type){}
-public void setview(String view){}
-public void setprice(int price){}
-public int getrnum(){}
-public int getbednum(){}
-public String getrtype(){}
-public String getview(){}
-public int getprice(){}
+public void BookRoom(){}
+public void AddRoom(){}
+public void DeleteRoom(){}
+public void SearchRoom(){}
+public void EditRoom(){}
+
 }
 ~_______________________________________________________________________________________________________________________________~
  public class hotel{
@@ -23,15 +19,9 @@ private String destination = " ";
 private String website = " ";
 private int roomsnum;
 private int phone;
-public void setrate(int rate){}
-public void setroomnum(int roomnum){}
-public void setphone(int phone){}
-public String getname(){}
-public int getrate(){}
-public String getdest(){}
-public String getweb(){}
-public int getroomsnum(){}
-public int getphone(){}
+public void TotalGuests(int Sum){}
+public void CheckFreeSpace(int NewGuests){}
+public void AddNewGuest(){}
 }
 ~_______________________________________________________________________________________________________________________________~
 class guestinformation 
@@ -40,57 +30,17 @@ class guestinformation
   private String lastname;
   private int id;
   private int age;
+  private String Nationality;
   private String adress;
   private String phonenumber;
   private String email;
   private double deposit;
   private String kind;
-  public void setname(String firstname,String lastname){};
-  public void setid(int id){};
-  public void setage (int age) {};
-  public void setadress (String adress) {};
-  public void setphonenumber (String phonenumber) {};
-  public void setemail (String email) {};
   public void deposit (double deposit) {};
-  public void setkind (String kind) {};
-  public String getfirstname()  
-  {
-      return this.firstname;
-  }
-  public int getid ()
-  {
-      return this.id;
-  }
-  public int getage ()
-  {
-      return this.age;
-  }
-  public String getadress ()
-  {
-      return this.adress;
-  }
-  public String getphonenumber ()
-  {
-      return this.phonenumber;
-  }
-  public String getemail ()
-  {
-      return this.email ;
-  }
-  public double getdeposit ()
-  {
-      return this.deposit ;
-  }
-  public String getkind ()
-  {
-      return this.kind;
-  }
+  public void AddNumberOfAdult(int Adult){}
+  public void AddNumberOfChildren(int Children){}
   
-    public void TotalGuests(int Sum){}
-    public void CheckFreeSpace(int NewGuests){}
-    public void AddNumberOfAdult(int Adult){}
-    public void AddNumberOfChildren(int Children){}
-}
+ }
 ~_______________________________________________________________________________________________________________________________~
 
 class reservation 
@@ -103,46 +53,7 @@ class reservation
    private String checkoutdate;
    private double roomprice;
    private double totalcost;
-   public void setreservationnumber (int reservationnumber){};
-   public void setnumberofnights (int numberofnights){};
-   public void setroomnumber (int roomnumber){};
-   public void setagentname (String agentname){};
-   public void setcheckindate (String checkindate){};
-   public void setcheckoutdate (String checkoutdate){};
-   public void setroomprice (double roomprice){};
-   public void settotalcost (double totalcost){};
-   public int getreservationnumber () 
-   {
-       return this.reservationnumber;
-   }
-   public int getnumberofnights () 
-   {
-       return this.numberofnights;
-   }
-   public int getroomnumber () 
-   {
-       return this.roomnumber;
-   }
-   public String getagentname () 
-   {
-       return this.agentname;
-   }
-   public String getcheckindate () 
-   {
-       return this.checkindate;
-   }
-   public String getcheckoutdate () 
-   {
-       return this.checkoutdate;
-   }
-   public double getroomprice ()
-   {
-       return this.roomprice;
-   }
-   public double gettotalcost () 
-   {
-       return this.totalcost;
-   }
+  
    
  public boolean roomtype (int singleroom , int doubleroom,int x ){}
  public boolean capcity (int numberofrooms){}
@@ -185,16 +96,6 @@ public class CreditCard
     private String ExpDate;
     private String CardNumber;
     private String SecurityCode;
-    public void setCardName(String CardName){}
-    public void setShippingAddress(String ShippingAddress){}
-    public void setExpDate(String ExpDate){}
-    public void setCardNumber(String CardNumber){}
-    public void setSecurityCode(String SecurityCode){}      
-    public String getCardName(){return this.CardName;}
-    public String getShippingAddress(){return this.ShippingAddress;}
-    public String getExpDate(){return this.ExpDate;}        
-    public String getCardNumber(){return this.CardNumber;}
-    public String getSecurityCode(){return this.SecurityCode;}  
     public void CheckEnoughMoneyInCard (){}
     public void TotalSumOfMoney(){}
     public void TakeMoneyFromCard (){}
@@ -229,39 +130,9 @@ class checkinandout
    private int dayofccheckout;
    private String monthofcheckout;
    private String yearofcheckout;
-     public void setdayofcheckin (int dayofcheckin){};
-     public void setmonthofcheckin (String monthofcheckin){};
-     public void setyearofcheckin (String monthofcheckin){};
-     public void setdayofcheckout (int dayofcheckout){};
-     public void setmonthofcheckout (String monthofcheckout){};
-     public void setyearofcheckout (String monthofcheckout){};
-     public int getdayofcheckin ()
-   {
-       return this.dayofccheckin;
-   }
-      public String getmonthofcheckin ()
-   {
-       return this.monthofcheckin;
-   }
-       public String getyearofcheckin ()
-   {
-       return this.yearofcheckin;
-   }
-       public int getdayofcheckout ()
-   {
-       return this.dayofccheckout;
-   }
-      public String getmonthofcheckout ()
-   {
-       return this.monthofcheckout;
-   }
-       public String getyearofcheckout ()
-   {
-       return this.yearofcheckout;
-   }
    public int calculatenoofdays (int dayofcheckin,int dayofcheckout) {}
+   
 }
-
   ~_______________________________________________________________________________________________________________________________~
 
 class spa
@@ -269,24 +140,9 @@ class spa
   private int spaprice;
   private int spacapcity;
   private int spataxs;
-     public void setspaprice (int spaprice) {} ;
-     public void setspacapcity (int spacapcity) {} ;
-     public void setspataxs (int spataxs) {} ;
-     public int getspaprice ()
-   {
-       return this.spaprice;
-   }
-        public int getspacapcity ()
-   {
-       return this.spacapcity;
-   }
-         public int getspataxs ()
-   {
-       return this.spataxs;
-   }
-   public  boolean spacapcity (int spacapcity) {}
-   public int totalcostofspa (int spaprice,int spataxs) {}
-   public void timeofspa (int hrs,int mins) {}
+  public  boolean spacapcity (int spacapcity) {}
+  public int totalcostofspa (int spaprice,int spataxs) {}
+  public void timeofspa (int hrs,int mins) {}
 }
   ~_______________________________________________________________________________________________________________________________~
 class gym
@@ -294,25 +150,10 @@ class gym
   private int gymprice;
   private int gymcapcity;
   private int gymtaxs;
-     public void setgymprice (int gymprice) {} ;
-     public void setspacapcity (int gymcapcity) {} ;
-     public void setsgymtaxs (int gymtaxs) {} ;
-     public int getgymprice ()
-   {
-       return this.gymprice;
-   }
-        public int getgymcapcity ()
-   {
-       return this.gymcapcity;
-   }
-         public int getgymtaxs ()
-   {
-       return this.gymtaxs;
-   }
-   public boolean wantgym (int choice) {}
-   public boolean gymcapcity (int gymcapcity) {}
-   public int totalcostofgym (int gymprice,int taxs) {}
-   public void timeofgym (int hrs,int mins)
+  public boolean wantgym (int choice) {}
+  public boolean gymcapcity (int gymcapcity) {}
+  public int totalcostofgym (int gymprice,int taxs) {}
+  public void timeofgym (int hrs,int mins)
     }
     ~_______________________________________________________________________________________________________________________________~
 
@@ -321,24 +162,9 @@ class transportation
   private int transportationprice;
   private int transporationtaxs;
   private String carmodel;
-   public void settransportationprice (int transportationprice) {} ;
-     public void settransporationtaxs (int transporationtaxs) {} ;
-     public void setcarmodel (String spataxs) {} ;
-     public int gettransportationprice ()
-   {
-       return this.transportationprice;
-   }
-        public int gettransporationtaxs ()
-   {
-       return this.transporationtaxs;
-   }
-         public String getcarmodel ()
-   {
-       return this.carmodel;
-   }
-   public boolean wanttransporation (int choice) {}
-   public int totalcostoftransportation (int transportationprice,int taxs){}
-   public String addtypeofcar (String carmodel)
+  public boolean wanttransporation (int choice) {}
+  public int totalcostoftransportation (int transportationprice,int taxs){}
+  public String addtypeofcar (String carmodel)
 }
   ~_______________________________________________________________________________________________________________________________~
 
@@ -346,17 +172,9 @@ class safari
 {
     private int safariprice;
     private int safaritaxs;
-    public void setsafariprice (int safariprice) {} ;
-    public void setsafaritaxs (int safaritaxs) {} ;
-
-    public int safariprice ()
-   {
-       return this.safariprice;
-   }public int getsafaritaxs ()
-   {
-       return this.safaritaxs;
-   }
-     public boolean wantsafari (int choice) {}
-     public int totalcostofsafari (int safariprice,int taxs){}
-
+    public int safariprice (){}  
+    public int Addtaxs (){}
+    public boolean Addsafari (int choice) {}
+    public int totalcost(int safariprice,int taxs){}
+    
 }
