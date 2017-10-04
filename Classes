@@ -122,7 +122,7 @@ public class Employee
 }
   ~_______________________________________________________________________________________________________________________________~
 
-class checkinandout
+public class checkinandout
 {
    private int dayofccheckin;
    private String monthofcheckin;
@@ -135,7 +135,7 @@ class checkinandout
 }
   ~_______________________________________________________________________________________________________________________________~
 
-class spa
+public class spa
 {
   private int spaprice;
   private int spacapcity;
@@ -145,7 +145,8 @@ class spa
   public void timeofspa (int hrs,int mins) {}
 }
   ~_______________________________________________________________________________________________________________________________~
-class gym
+
+public class gym
 {
   private int gymprice;
   private int gymcapcity;
@@ -157,7 +158,7 @@ class gym
     }
     ~_______________________________________________________________________________________________________________________________~
 
-class transportation 
+public class transportation 
 {
   private int transportationprice;
   private int transporationtaxs;
@@ -168,7 +169,7 @@ class transportation
 }
   ~_______________________________________________________________________________________________________________________________~
 
-class safari 
+public class safari 
 {
     private int safariprice;
     private int safaritaxs;
@@ -178,3 +179,20 @@ class safari
     public int totalcost(int safariprice,int taxs){}
     
 }
+
+  ~_______________________________________________________________________________________________________________________________~
+
+public class Bill
+{
+  private int ID;
+  private String GuestName;
+  public void PrintBill(){} 
+  
+}
+  ~_______________________________________________________________________________________________________________________________~
+
+public class Receptionist
+  
+  private int ID;
+  private String Name;
+  public 
