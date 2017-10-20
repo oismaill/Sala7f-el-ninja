@@ -201,42 +201,47 @@ public class Receptionist
 ~_________________________________________________________________________________________________________________________________~
  class cheif
  {
-   private void addcheif();
-   private void deletecheif();
-   private void modify();
-   private void takeorder();
+   private void addcheif() {};
+   private void deletecheif() {};
+   private void searchcheif () {} ;
+   private void modify() {};
+   private void takeorder() {};
  }
  ~_________________________________________________________________________________________________________________________________~
  class security 
  {
-   private void addsecurity();
-   private void deletesecurity();
-   private void modify();
-   private givealalrm();
+   private void addsecurity() {};
+   private void deletesecurity() {};
+   private void modifysecurity() {};
+   private void searchsecurity() {};
+   private givealalrm() {};
  }
  ~_________________________________________________________________________________________________________________________________~
- class hous_keeping 
+ class housekeeping 
  {
-    private void addhous_keeping();
-    private void deletehous_keeping();
-    private void modify()
-    private void roomsDone();
+    private void addhousekeeping() {};
+    private void deletehousekeeping() {};
+    private void searchhousekeeping() {};
+    private void modify() {} ;
+    private void roomsDone() {};
  }
  ~_________________________________________________________________________________________________________________________________~
  class worker
  {
-    private void addclean_worker();
-    private void deleteclean_worker();
-    private void modify()
-    private void cleanDone();
+     private void addworker() {} ;
+    private void deleteworker(){};
+    private void modifywoker() {};
+    private void searchwoker() {};
+    private void cleanDone() {};
  }
  ~_________________________________________________________________________________________________________________________________~
  class watier
  {
-    private void addclean_worker();
-    private void deleteclean_worker();
-    private void modify()
-    private void cleanDone();   
+    private void addworker() {} ;
+    private void deleteworker(){};
+    private void modifywoker() {};
+    private void searchwoker() {};
+    private void cleanDone() {};  
  }
 ~_________________________________________________________________________________________________________________________________~
 class contact{
@@ -262,7 +267,8 @@ public class FoodItem
   public void Edit() {}
   public void Delete() {}
   public void Search () {}
-  
+  public void modify () {} ;
+
  }
     ~_______________________________________________________________________________________________________________________________~
 
