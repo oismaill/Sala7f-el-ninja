@@ -4,21 +4,20 @@ private int bednum;
 private String type;
 private String view;
 private int price;
-public void BookRoom(){}
-public void AddRoom(){}
-public void DeleteRoom(){}
-public void SearchRoom(){}
-public void EditRoom(){}
 
+public void SetRoomType(int){}
+public void SetRoomView(int){}
 }
 ~_______________________________________________________________________________________________________________________________~
  public class hotel{
-private String name= " ";
-private int rate;
-private String destination = " ";
+private const String name= " lyaly el sh2a ";
+private int rate;                                   // msh fahm da bta3 a !!
+private String chain ;
 private String website = " ";
-private int roomsnum;
-private int phone;
+private const int roomsnum = 200;
+private string phone;
+
+public void SetChain(int ){}
 public void TotalGuests(int Sum){}
 public void CheckFreeSpace(int NewGuests){}
 public void AddNewGuest(){}
