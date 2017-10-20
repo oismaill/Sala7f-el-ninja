@@ -193,11 +193,25 @@ public class Bill
 }
   ~_______________________________________________________________________________________________________________________________~
 
-public class Receptionist
-  
-  private int ID;
-  private String Name;
-  public 
+public class Receptionist extends Information implements IMange,ISalary {
+    
+    private int Salary;
+    public void checkRoom(){}
+    public void bookRoom(){}
+    public void addNumberOfAdults(int Adults){}
+    public void addNumberOfChildren(int Children){}
+    public void generateBill(){}
+    public void add(){}
+    public void search(){}
+    public void edit(){}
+    public void delete(){}
+    public void calculateHours(int hours){}
+    public void addBounce(){}
+    public void addTaxes(){}
+    public void calculateSalary(){}
+    public void printReceipt(){} 
+    
+}
 ~_________________________________________________________________________________________________________________________________~
  class cheif
  {
