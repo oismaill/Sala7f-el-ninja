@@ -104,7 +104,7 @@ public class CreditCard
 }
   ~_______________________________________________________________________________________________________________________________~
 
-
+  
 public class Employee 
 {
     private int ID;
@@ -293,4 +293,120 @@ public class HotelIncome
   public void CalculateIncome() {}
   public void CalculateOutcome () {}
   public void PrintBill () {}
+}
+~_____________________________________________________________________________________________________________________________________~
+public class io {
+    String login(){
+         System.out.println(" ** welcome ** ");
+        System.out.println(" please enter you ID ");
+        Scanner ID = new Scanner(System.in);
+        System.out.println(" please enter you password   ");
+        Scanner pass = new Scanner(System.in);    
+        
+        return ID+"-"+pass;
+    }
+    void welcome (UserInfo y){
+         System.out.println(" ** welcome "+y.jop+y.Name);
+         if (y.jop=="maneger")
+         {
+             System.out.println(" you can press (1-add  2-delet ......) ");
+              Scanner sc = new Scanner(System.in);
+              int chois = sc.nextInt();
+              
+              if (chois==1)
+              {
+                  
+              }
+              else if (chois==2)
+              {
+                  
+              }         // w hakzaaaaaaaaaa shofto 2asdy kan a ....
+         }
+    }
+    
+    
+}
+~_____________________________________________________________________________________________________________________________________~
+public class login extends UserInfo
+{
+    private UserInfo user=null ;
+    private io print ;
+    private String all;
+    private String enterID;
+    private String enterPass;
+    private int counter=1;
+    
+    public void Getdata (){
+        
+       all= print.login();                     // take inputs from user
+       
+       for(int i =0;i<all.length();i++)       //  to get enterd ID and Password 
+       {
+        if(all.charAt(i)!= '-')   
+        {
+            if (counter==1)
+                enterID+=all.charAt(i);
+            if (counter==2)
+                enterPass+=all.charAt(i);
+        }
+        else
+         counter++;
+       }
+    }
+    public UserInfo CheckLogin () throws FileNotFoundException{
+       File myfile = new File ("");
+       Scanner sc =new Scanner(myfile);
+       String line=sc.nextLine(); //"omar-44511315-1609905-som3a-15-asfsaf-asdasd-asdasdasd-asdasd-asdasd-asdasd-asdasd";//=sc.nextLine();
+       counter=1;
+       for(int i =0;i<line.length();i++)       //  to read user data from the line we have get 
+       {
+        if(line.charAt(i)!= '-')   
+        {
+            if (counter==1)
+                user.Name+=line.charAt(i);
+            else if (counter==2)
+                user.national_ID+=line.charAt(i);
+            else if (counter==3)
+                user.ID+=line.charAt(i);
+             else if (counter==4)
+                user.password+=line.charAt(i);
+             else if (counter==5)
+                user.Age+=line.charAt(i);
+             else if (counter==6)
+                user.Address+=line.charAt(i);
+             else if (counter==7)
+                user.Phone+=line.charAt(i);
+             else if (counter==8)
+                user.Email+=line.charAt(i);
+             else if (counter==9)
+                user.kind+=line.charAt(i);
+             else if (counter==10)
+                user.Nationality+=line.charAt(i);
+             else if (counter==11)
+                user.sallary+=line.charAt(i);
+        }
+        else
+            counter++;
+        if (enterID==user.ID&&enterPass==user.password)
+            return(user);
+       }
+        return null;
+    }
+
+}
+ ~_______________________________________________________________________________________________________________________________~
+public class UserInfo {
+    
+public String Name;
+public String national_ID;
+public String ID;
+public String password;
+public String jop;
+public String Age;
+public String Address;
+public String Phone;
+public String Email;
+public String kind;
+public String Nationality;
+public double sallary;
 }
